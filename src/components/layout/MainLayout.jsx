@@ -6,7 +6,7 @@ import PageLoader from "../common/PageLoader";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen" dir="rtl">
+    <div className="flex flex-col min-h-screen bg-background" dir="rtl">
       <Header />
       <main className="flex-grow container mx-auto p-4">
         <Suspense fallback={<PageLoader />}>

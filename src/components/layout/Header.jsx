@@ -11,6 +11,9 @@ const Header = () => {
           <Link to="/" className="hover:text-[#289D61] transition">
             الرئيسية
           </Link>
+          <Link to="/categories" className="hover:text-[#289D61] transition">
+           التصنيفات
+          </Link>
           <Link to="/courses" className="hover:text-[#289D61] transition">
             الدورات
           </Link>

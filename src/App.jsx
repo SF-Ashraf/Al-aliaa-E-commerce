@@ -9,7 +9,10 @@ const Courses = lazy(() => import("./pages/Courses"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
+const Categories = lazy(() => import("./pages/Categories"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Reports = lazy(() => import("./pages/Reports"));
 
 function App() {
   return (
@@ -23,7 +26,12 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
+            <Route path="categories" element={<Categories />} />
+
             <Route path="*" element={<NotFound />} />
+          </Route>
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route path="reports" element={<Reports />} />
           </Route>
         </Routes>
       </Suspense>
